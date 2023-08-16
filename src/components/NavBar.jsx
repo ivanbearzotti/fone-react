@@ -1,5 +1,6 @@
 import React from 'react';
 import CartWidget from './CartWidget';
+import { Link } from 'react-router-dom';
 
 function NavBar(){
   return(
@@ -7,15 +8,15 @@ function NavBar(){
       <div className="sticky top-0 z-40 h-20 w-full px-6 flex items-center justify-between bg-white border-b border-solid border-border lg:px-8">
         <i className='bx bx-menu cursor-pointer text-2xl lg:hidden'></i>
         <i className='bx bx-x bx-x-1 cursor-pointer text-2xl hidden'></i>
-        <a href="index.html">
+        <Link to="/">
           <img src="assets/img/logo2.png" alt="" className="w-auto h-5"></img>
-        </a>
+        </Link>
         <div className="hidden lg:flex">
           <ul className="lg:flex lg:gap-14">
-            <li className=""><a href="" className="font-roboto text-black text-sm font-semibold tracking-widest">KITESURF</a></li>
-            <li className=""><a href="" className="font-roboto text-black text-sm font-semibold tracking-widest">FOIL</a></li>
-            <li className=""><a href="" className="font-roboto text-black text-sm font-semibold tracking-widest">SURF FOIL</a></li>
-            <li className=""><a href="" className="font-roboto text-black text-sm font-semibold  tracking-widest">WING FOIL</a></li>
+            <li className=""><Link to="" className="font-roboto text-black text-sm font-semibold tracking-widest">KITESURF</Link></li>
+            <li className=""><Link to="" className="font-roboto text-black text-sm font-semibold tracking-widest">FOIL</Link></li>
+            <li className=""><Link to="" className="font-roboto text-black text-sm font-semibold tracking-widest">SURF FOIL</Link></li>
+            <li className=""><Link to="" className="font-roboto text-black text-sm font-semibold  tracking-widest">WING FOIL</Link></li>
           </ul>
         </div>
         <CartWidget items="1"/>
@@ -24,7 +25,7 @@ function NavBar(){
       <div className="mobile-menu w-full h-full px-6 pt-16 hidden items-center justify-between z-30 bg-white">
         <div className="flex justify-center">
           <ul className="flex flex-col items-center gap-8">
-            <li className=""><a href="" clasNames="font-poppins font-semibold text-black">KITESURF</a></li>
+            <li className=""><a href="" className="font-poppins font-semibold text-black">KITESURF</a></li>
             <li className=""><a href="" className="font-poppins font-semibold text-black">FOIL</a></li>
             <li className=""><a href="" className="font-poppins font-semibold text-black">SURF FOIL</a></li>
             <li className=""><a href="" className="font-poppins font-semibold text-black">WING FOIL</a></li>
