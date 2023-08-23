@@ -3,6 +3,7 @@ import CartWidget from './CartWidget';
 import { Link } from 'react-router-dom';
 
 function NavBar(){
+
   return(
     <nav className='sticky top-0 z-20 flex flex-col'>
       <div className="sticky top-0 z-40 h-20 w-full px-6 flex items-center justify-between bg-white border-b border-solid border-border lg:px-8">
@@ -13,10 +14,10 @@ function NavBar(){
         </Link>
         <div className="hidden lg:flex">
           <ul className="lg:flex lg:gap-14">
-            <li className=""><Link to="" className="font-roboto text-black text-sm font-semibold tracking-widest">KITESURF</Link></li>
-            <li className=""><Link to="" className="font-roboto text-black text-sm font-semibold tracking-widest">FOIL</Link></li>
-            <li className=""><Link to="" className="font-roboto text-black text-sm font-semibold tracking-widest">SURF FOIL</Link></li>
-            <li className=""><Link to="" className="font-roboto text-black text-sm font-semibold  tracking-widest">WING FOIL</Link></li>
+            <li className=""><Link to="/products/freeride" className="font-roboto text-black text-sm font-semibold tracking-widest">FREERIDE</Link></li>
+            <li className=""><Link to="/products/freestyle" className="font-roboto text-black text-sm font-semibold tracking-widest">FREESTYLE</Link></li>
+            <li className=""><Link to="/products/bigair" className="font-roboto text-black text-sm font-semibold tracking-widest">BIG AIR</Link></li>
+            <li className=""><Link to="/products/wave" className="font-roboto text-black text-sm font-semibold  tracking-widest">WAVE</Link></li>
           </ul>
         </div>
         <CartWidget items="1"/>
@@ -25,11 +26,10 @@ function NavBar(){
       <div className="mobile-menu w-full h-full px-6 pt-16 hidden items-center justify-between z-30 bg-white">
         <div className="flex justify-center">
           <ul className="flex flex-col items-center gap-8">
-            <li className=""><a href="" className="font-poppins font-semibold text-black">KITESURF</a></li>
-            <li className=""><a href="" className="font-poppins font-semibold text-black">FOIL</a></li>
-            <li className=""><a href="" className="font-poppins font-semibold text-black">SURF FOIL</a></li>
-            <li className=""><a href="" className="font-poppins font-semibold text-black">WING FOIL</a></li>
-            <li className=""><a href="" className="font-poppins font-semibold text-black">F-ONE</a></li>
+            <li className=""><Link to="/products/freeride" className="font-poppins font-semibold text-black">FREERIDE</Link></li>
+            <li className=""><Link to="/products/freestyle" className="font-poppins font-semibold text-black">FREESTYLE</Link></li>
+            <li className=""><Link to="/products/bigair" className="font-poppins font-semibold text-black">BIG AIR</Link></li>
+            <li className=""><Link to="/products/wave" className="font-poppins font-semibold text-black">WAVE</Link></li>
           </ul>
         </div>
         <div className="footer1 flex flex-col justify-center items-center gap-2 pt-20">

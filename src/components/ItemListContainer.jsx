@@ -16,7 +16,7 @@ function ItemListContainer(){
     pedirProductos()
       .then((res) => {
         if(categoria){
-          setProductos(res.filter(prod => prod.type = categoria));
+          setProductos(res.filter((prod) => prod.type.toLowerCase().replace(/\s/g, '') === categoria));
         } else {
           setProductos(res);
         }
