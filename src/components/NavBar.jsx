@@ -20,7 +20,7 @@ function NavBar(){
             <li className=""><Link to="/products/wave" className="font-roboto text-black text-sm font-semibold  tracking-widest">WAVE</Link></li>
           </ul>
         </div>
-        <CartWidget items="1"/>
+        <CartWidget />
         <i className='bx bx-x bx-x-2 cursor-pointer text-2xl hidden'></i>
       </div>
       <div className="mobile-menu w-full h-full px-6 pt-16 hidden items-center justify-between z-30 bg-white">
