@@ -8,20 +8,13 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 
-const apiKey = import.meta.env.VITE_apiKey
-const authDomain = import.meta.env.VITE_authDomain
-const projectId = import.meta.env.VITE_projectId
-const storageBucket = import.meta.env.VITE_storageBucket
-const messagingSenderId = import.meta.env.VITE_messagingSenderId
-const appId = import.meta.env.VITE_appId
-
 const firebaseConfig = {
-    apiKey,
-    authDomain,
-    projectId,
-    storageBucket,
-    messagingSenderId,
-    appId
+    apiKey: "AIzaSyCq_VIk0P1xUxYH-O7zstifOFfVRlBiCWw",
+    authDomain: "fone-1461c.firebaseapp.com",
+    projectId: "fone-1461c",
+    storageBucket: "fone-1461c.appspot.com",
+    messagingSenderId: "628075046586",
+    appId: "1:628075046586:web:7c16400f00c43945604483"
 };
 
 // Initialize Firebase
