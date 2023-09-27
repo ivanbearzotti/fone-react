@@ -9,7 +9,7 @@ const CartItem = ({p}) => {
         <>
             <div className="cart-card flex gap-4 justify-between bg-white p-4 mt-4 rounded-xl drop-shadow-xl">
                 <div className="cart-card-img flex items-center">
-                    <img src={`../../public/assets/img/${p.img}`} alt="" className="h-32"></img>
+                    <img src={p.img} alt="" className="h-32"></img>
                 </div>
                 <div className="card-card-info flex flex-col gap-2">
                     <div className="name-type-delete flex gap-10">

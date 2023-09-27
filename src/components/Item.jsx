@@ -5,7 +5,7 @@ const Item = ( {producto} ) => {
     return(
         <div className="card-container bg-white rounded-xl flex flex-col p-8 gap-4 drop-shadow-xl lg:transition lg:duration-300 lg:hover:scale-105">
             <div className="card-img">
-                <img src={`/assets/img/${producto.img}`} alt={producto.name} className="flex justify-center w-full lg:transition lg:duration-300 lg:hover:scale-105"/>
+                <img src={producto.img} alt={producto.name} className="flex justify-center w-full lg:transition lg:duration-300 lg:hover:scale-105"/>
             </div>
             <div className="card-info">
                 <div className="name-description-price flex justify-between">

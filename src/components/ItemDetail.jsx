@@ -20,7 +20,7 @@ const ItemDetail = ( {item} ) => {
         <div id="productos" className="grid grid-cols-1 px-10 pb-10 pt-10 gap-4 md:grid md:grid-cols-2 md:gap-8 lg:grid lg:grid-cols-4">
             <div className="card-container bg-white rounded-xl flex flex-col p-8 gap-4 drop-shadow-xl lg:transition lg:duration-300 lg:hover:scale-105">
                 <div className="card-img">
-                    <img src={`../../public/assets/img/${item.img}`} alt={item.name} className="flex justify-center w-full lg:transition lg:duration-300 lg:hover:scale-105"/>
+                    <img src={item.img} alt={item.name} className="flex justify-center w-full lg:transition lg:duration-300 lg:hover:scale-105"/>
                 </div>
                 <div className="card-info">
                     <div className="name-description-price flex justify-between">
